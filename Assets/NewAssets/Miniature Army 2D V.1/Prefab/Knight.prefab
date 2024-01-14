@@ -153,8 +153,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03242886, y: 0.84314924}
-  m_Size: {x: 0.7810497, y: 1.8647684}
+  m_Offset: {x: 0.03242886, y: 0.90819633}
+  m_Size: {x: 0.7810497, y: 1.7346742}
   m_Direction: 0
 --- !u!114 &8656905566202632418
 MonoBehaviour:
@@ -189,6 +189,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  popUpText: {fileID: 3182050301811685492, guid: edfc85b762277604f8725a832d3d4879, type: 3}
+  floatingTextPrefab: {fileID: 7014728763000517184, guid: c8c5aef349bc6234dac5bf65be1f2bfd, type: 3}
   maxHealth: 600
   currentHealth: 10000
   isAlive: 1
@@ -280,8 +282,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03242886, y: 0.84314924}
-  m_Size: {x: 0.7810497, y: 1.8647684}
+  m_Offset: {x: 0.03242886, y: 0.9081962}
+  m_Size: {x: 0.7810497, y: 1.7346745}
   m_Direction: 0
 --- !u!1 &1000011164445256
 GameObject:

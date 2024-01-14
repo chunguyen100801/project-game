@@ -10,7 +10,7 @@ public class ZombieController : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
     public int currentHealth = 1000;
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
     float timer;
     int direction = 1;
     // PlayerController playerController;
@@ -47,7 +47,7 @@ public class ZombieController : MonoBehaviour
 
         if (vertical)
         {
-            position.y = position.y + Time.deltaTime * speed * direction;
+            position.y += Time.deltaTime * speed * direction;
 
             // Flip horizontally based on the direction and initial position
             if (position.x > firstPosition.x && !isFacingRight)
@@ -61,7 +61,7 @@ public class ZombieController : MonoBehaviour
         }
         else
         {
-            position.x = position.x + Time.deltaTime * speed * direction;
+            position.x += Time.deltaTime * speed * direction;
 
             // Flip horizontally based on the direction
             if (direction > 0 && !isFacingRight)
