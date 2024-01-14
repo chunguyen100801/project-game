@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 2
-  walkStopRate: 0.04
   castFilter:
     useTriggers: 0
     useLayerMask: 1
@@ -121,6 +120,8 @@ MonoBehaviour:
   wallDistance: 0.2
   roadLength: 10
   hasTarget: 0
+  launchPoint: {fileID: 0}
+  arrowPrefab: {fileID: 0}
 --- !u!70 &7892355165556160757
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -192,7 +193,7 @@ MonoBehaviour:
   popUpText: {fileID: 3182050301811685492, guid: edfc85b762277604f8725a832d3d4879, type: 3}
   floatingTextPrefab: {fileID: 7014728763000517184, guid: c8c5aef349bc6234dac5bf65be1f2bfd, type: 3}
   maxHealth: 600
-  currentHealth: 10000
+  currentHealth: 600
   isAlive: 1
   checkwinner: 0
   isInvincible: 0
@@ -1038,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordDamage: 100
-  knockback: {x: 3, y: 0}
+  knockback: {x: 2, y: 0}
 --- !u!1 &7540579139271559209
 GameObject:
   m_ObjectHideFlags: 0

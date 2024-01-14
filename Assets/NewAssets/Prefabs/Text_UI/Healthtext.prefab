@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1929064364808149413}
   - component: {fileID: 681773707815732198}
   - component: {fileID: 447174848192778869}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Healthtext
   m_TagString: Untagged
   m_Icon: {fileID: 0}

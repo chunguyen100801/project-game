@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4124794929413178235}
   - component: {fileID: 4341094299555150884}
   - component: {fileID: 5374201252366214606}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ArrowPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4765531282025987776}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.21498127, w: 0.9766182}
+  m_LocalRotation: {x: 0, y: 0, z: 0.21498244, w: 0.976618}
   m_LocalPosition: {x: 26.151644, y: -0.57201165, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

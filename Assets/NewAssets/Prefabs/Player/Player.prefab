@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordDamage: 100
-  knockback: {x: 5, y: 0}
+  knockback: {x: 1, y: 0}
 --- !u!1 &1933105172825520562
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordDamage: 150
-  knockback: {x: 0, y: 0}
+  knockback: {x: 2, y: 0}
 --- !u!60 &6500472173064448698
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -606,6 +606,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Knight, Assembly-CSharp
+        m_MethodName: Winner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Knight, Assembly-CSharp
+        m_MethodName: Winner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damageableHit:
     m_PersistentCalls:
       m_Calls:
@@ -707,7 +731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swordDamage: 200
-  knockback: {x: 0, y: 0}
+  knockback: {x: 2, y: 0}
 --- !u!60 &4657417425045048818
 PolygonCollider2D:
   m_ObjectHideFlags: 0

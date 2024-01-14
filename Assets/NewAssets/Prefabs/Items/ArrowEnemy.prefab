@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8735367530305447028}
   - component: {fileID: 8760632846973631596}
   - component: {fileID: 4105565273373627250}
-  m_Layer: 9
-  m_Name: Arrow
+  m_Layer: 10
+  m_Name: ArrowEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,6 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d14dcfdf3d3de0479eb6270b1e8a0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowDamage: 200
-  moveSpeed: {x: 9, y: 0}
+  arrowDamage: 100
+  moveSpeed: {x: 6, y: 0}
   knockback: {x: 2, y: 0}

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Knight : MonoBehaviour
 {
     public float walkSpeed = 2f;
-    public float walkStopRate = 0.04f;
 
     Rigidbody2D rb;
     CapsuleCollider2D touchState;
@@ -17,13 +16,15 @@ public class Knight : MonoBehaviour
     public DetectionZone detectionZone;
 
 
-    public float groundDistance = 0.5f, wallDistance = 0.2f;
+    public float groundDistance = 0.05f, wallDistance = 0.2f;
 
     private bool isGrounded, isOnWall;
-    public float roadLength = 5f;
+    public float roadLength = 10f;
 
     public bool hasTarget = false;
     private float currentSpeed;
+    public Transform launchPoint;
+    public GameObject arrowPrefab;
     Damage damage;
 
     private void Awake()
@@ -113,4 +114,11 @@ public class Knight : MonoBehaviour
         animator.SetBool("isWin", true);
     }
 
+    public void Launch()
+    {
+        GameObject arrow = Instantiate(arrowPrefab, launchPoint.position, arrowPrefab.transform.rotation);
+        Vector3 originalScale = arrow.transform.localScale;
+        arrow.transform.localScale = new Vector3(
+            originalScale.x * transform.localScale.x > 0 ? -1 : 1, originalScale.y, originalScale.z);
+    }
 }

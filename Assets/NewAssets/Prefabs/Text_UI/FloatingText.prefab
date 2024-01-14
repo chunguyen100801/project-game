@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8434253248825459539}
   - component: {fileID: 3593532139318875241}
   - component: {fileID: 5843198441702365213}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FloatingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 3
+  offset: {x: 0, y: 2, z: 0}
 --- !u!95 &5843198441702365213
 Animator:
   serializedVersion: 5
