@@ -8,7 +8,6 @@ public class Damage : MonoBehaviour
     public UnityEvent<int, int> healthChanged;
     public UnityEvent damageableDeath;
     public UnityEvent<int, Vector2> damageableHit;
-    public GameObject popUpText;
     public GameObject floatingTextPrefab;
     private Animator animator;
 

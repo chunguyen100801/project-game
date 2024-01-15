@@ -5,6 +5,8 @@ using UnityEngine;
 public class RestoreHealthPickup : MonoBehaviour
 {
     public int healthRestore = 100;
+
+    [SerializeField] private AudioSource healSound;
     // public Vector3 spinRotationSpeed = new Vector3(0, 180, 0);
 
     // AudioSource pickupSource;
@@ -37,6 +39,7 @@ public class RestoreHealthPickup : MonoBehaviour
 
                 // healthPickupSource.Play();
                 Destroy(gameObject);
+                healSound.Play();
             }
 
         }
