@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a07c4e3-3c04-481d-ac02-2333d863c9df" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project-game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Items/HealthPickup_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Damage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Items/RestoreHealthPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Items/RestoreHealthPickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Music/BGMusic.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Music/BGMusic.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/princess.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAssets/Prefabs/princess.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Skies DEMO/Parallax Pixel Skies 240x135px/Demo 02 Parallax Pixel Sky/Background.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/KeyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/KeyScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "level5",
+    "git-widget-placeholder": "endgamemenu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +97,7 @@
       <updated>1705246917900</updated>
       <workItem from="1705246921254" duration="2263000" />
       <workItem from="1705327482569" duration="2305000" />
+      <workItem from="1705341964175" duration="781000" />
     </task>
     <servers />
   </component>

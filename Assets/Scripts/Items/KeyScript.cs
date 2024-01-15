@@ -27,7 +27,5 @@ public class KeyScript : MonoBehaviour
                 // Handle the case where the object wasn't found
             }
         }
-
-
     }
 }
