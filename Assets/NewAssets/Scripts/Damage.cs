@@ -59,6 +59,7 @@ public class Damage : MonoBehaviour
                 animator.SetBool("isAlive", isAlive);
                 checkwinner = true;
                 damageableDeath.Invoke();
+                currentHealth = 0;
             }
             isInvincible = true;
             invincibleTimer = timeInvincible;

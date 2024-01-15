@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,9 +24,16 @@ public class Knight : MonoBehaviour
 
     public bool hasTarget = false;
     private float currentSpeed;
+
     public Transform launchPoint;
     public GameObject arrowPrefab;
+
+    public GameObject bulltet1;
+    public GameObject bulltet2;
+    public GameObject bulltet3;
     Damage damage;
+
+    public GameObject canvasBoard;
 
     private void Awake()
     {
@@ -96,6 +104,19 @@ public class Knight : MonoBehaviour
                 currentSpeed = 0f;
             }
         }
+
+        if (canvasBoard)
+        {
+            Debug.Log("abc" + canvasBoard.transform.localScale.x);
+
+            if (transform.localScale.x < 0)
+            {
+                canvasBoard.transform.localScale = new Vector3(Mathf.Abs(canvasBoard.transform.localScale.x),
+            canvasBoard.transform.localScale.y, canvasBoard.transform.localScale.z);
+            }
+            Debug.Log(canvasBoard.transform.localScale.x)
+;
+        }
     }
 
     public void OnHit(int damage, Vector2 knockback)
@@ -119,6 +140,19 @@ public class Knight : MonoBehaviour
         GameObject arrow = Instantiate(arrowPrefab, launchPoint.position, arrowPrefab.transform.rotation);
         Vector3 originalScale = arrow.transform.localScale;
         arrow.transform.localScale = new Vector3(
+            originalScale.x * transform.localScale.x > 0 ? -1 : 1, originalScale.y, originalScale.z);
+    }
+
+    public void LaunchBoss()
+    {
+        GameObject[] bulletList = new GameObject[] { bulltet1, bulltet2, bulltet3 };
+        int randomIndex = UnityEngine.Random.Range(0, bulletList.Length);
+        GameObject bulletRandom = bulletList[randomIndex];
+
+        GameObject bullet = Instantiate(bulletRandom, launchPoint.position, bulletRandom.transform.rotation);
+
+        Vector3 originalScale = bullet.transform.localScale;
+        bullet.transform.localScale = new Vector3(
             originalScale.x * transform.localScale.x > 0 ? -1 : 1, originalScale.y, originalScale.z);
     }
 }
