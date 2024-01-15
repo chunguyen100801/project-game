@@ -22,6 +22,11 @@ public class Player : MonoBehaviour
 
     public bool isAlive = true;
 
+    [SerializeField] private AudioSource attackSound;
+    [SerializeField] private AudioSource jumpSound;
+    [SerializeField] private AudioSource gotHitSound;
+    [SerializeField] private AudioSource bowSound;
+
     // Vector2 lookDirection = new Vector2(0, 0);
 
     BoxCollider2D touchState;
@@ -166,6 +171,7 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("jump");
             rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
+            jumpSound.Play();
         }
         else
         {
@@ -180,7 +186,7 @@ public class Player : MonoBehaviour
     public void OnHit(int damage, Vector2 knockback)
     {
         rigidbody2D.velocity = new Vector2(knockback.x, rigidbody2D.velocity.y + knockback.y);
-
+        gotHitSound.Play();
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -190,6 +196,7 @@ public class Player : MonoBehaviour
             animator.SetTrigger("attack");
             isAttacking = true;
             StartCoroutine(ResetSpeedAfterDelay());
+            attackSound.Play();
         }
     }
     private IEnumerator ResetSpeedAfterDelay()
@@ -209,6 +216,8 @@ public class Player : MonoBehaviour
                 isShooting = true;
 
                 StartCoroutine(ResetCanMoveAfterDelay());
+                
+                bowSound.Play();
             }
             else if (context.canceled)
             {
