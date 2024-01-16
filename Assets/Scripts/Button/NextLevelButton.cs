@@ -8,9 +8,10 @@ public class NextLevelButton : MonoBehaviour
     [SerializeField] private string nextLevel;
 
     public void OnClick()
-    {
+    {   
+         Debug.Log(nextLevel);
         SceneManager.LoadScene(nextLevel);
 
-        Debug.Log(nextLevel);
+       
     }
 }
