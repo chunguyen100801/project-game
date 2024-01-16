@@ -2,16 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VictoryMenu : MonoBehaviour
 {
     public void Finish()
     {
-        System.Console.WriteLine("Finish");
+        Application.Quit();
     }
 
     public void PLayAgain()
     {
-        System.Console.WriteLine("PLay again");
+        SceneManager.LoadScene("Menu-Main");
     }
 }

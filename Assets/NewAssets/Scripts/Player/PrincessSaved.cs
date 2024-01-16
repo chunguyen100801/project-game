@@ -11,7 +11,8 @@ public class PrincessSaved : MonoBehaviour
         {
             if (myMenuObject != null)
             {
-                myMenuObject.SetActive(true);
+                myMenuObject.SetActive(true);                
+                Debug.Log("Menu object touched!");
             }
             else
             {
